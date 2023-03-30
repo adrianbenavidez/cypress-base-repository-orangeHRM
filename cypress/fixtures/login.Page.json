@@ -1,0 +1,32 @@
+{
+    "input":{
+        "username":"[name='username']",
+        "password":"[name='password']"
+    },
+
+    "button":{
+        "login":"[type='submit']",
+        "forgotYourPassword":"//p[contains(.,'Forgot your password?')]"
+    },
+
+    "data":{
+        "username":"Admin",
+        "password":"admin123",
+        "incorrectUsername":"xxxxx",
+        "incorrectPassword":"12345"
+    },
+
+    "url":{
+        "login":"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+        "dashboard":"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"
+    },
+
+    "p":{
+        "invalidCredentials":"//p[@class='oxd-text oxd-text--p oxd-alert-content-text'][contains(.,'Invalid credentials')]"
+    }, 
+
+    "msjErrorInvalidCredentials":"Invalid credentials"
+
+
+}
+

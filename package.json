@@ -1,0 +1,21 @@
+{
+  "name": "cypress-base-repository",
+  "version": "1.0.0",
+  "description": "repositorio base para trabajar con cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "file": "cypress run --browser chrome --spec"
+  },
+  "keywords": [
+    "repositorio",
+    "base",
+    "cypress"
+  ],
+  "author": "Hector Adrian Benavidez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
