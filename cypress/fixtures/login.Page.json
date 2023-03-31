@@ -6,7 +6,7 @@
 
     "button":{
         "login":"[type='submit']",
-        "forgotYourPassword":"//p[contains(.,'Forgot your password?')]"
+        "forgotYourPassword":".orangehrm-login-forgot > .oxd-text"
     },
 
     "data":{
