@@ -21,7 +21,7 @@ import {
   
   When("hace click en el boton Login", () => {
     cy.fixture("login.Page").then((the)=>{
-        cy.get(the.button.login).click({force:true})
+        cy.get(the.button.login).should("be.enabled").click({force:true})
     })
   });
 
@@ -30,4 +30,19 @@ import {
         cy.url().should("eq",the.url.dashboard)
     })
   });
+
+  When("Un usuario ingresa el {string} y el {string}", (username,password) => {
+    cy.fixture("login.Page").then((the)=>{
+        cy.get(the.input.username).type(username)
+        cy.get(the.input.password).type(password)
+    })
+  });
+
+  Then("se muestra un mensaje {string}", (mensaje) => {
+    cy.fixture("login.Page").then((the)=>{
+        cy.xpath(the.p.invalidCredentials).should("have.text",mensaje)
+    })
+  });
+
+  
   
