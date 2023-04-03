@@ -6,7 +6,7 @@
 
     "button":{
         "login":"[type='submit']",
-        "forgotYourPassword":"//p[contains(.,'Forgot your password?')]"
+        "forgotYourPassword":".orangehrm-login-forgot > .oxd-text"
     },
 
     "data":{
@@ -23,10 +23,6 @@
 
     "p":{
         "invalidCredentials":"//p[@class='oxd-text oxd-text--p oxd-alert-content-text'][contains(.,'Invalid credentials')]"
-    }, 
-
-    "msjErrorInvalidCredentials":"Invalid credentials"
-
-
+    }
 }
 
