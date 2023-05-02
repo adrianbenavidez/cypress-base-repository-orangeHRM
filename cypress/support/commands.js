@@ -31,3 +31,15 @@ Cypress.Commands.add("login",(username,password)=>{
         cy.get(the.button.login).should('be.enabled').click({force:true})
     })
 })
+
+Cypress.Commands.add("fastLogin",()=>{
+
+    cy.fixture("login.Page").then((the)=>{
+        cy.visit(the.url.login)
+        cy.get(the.input.username).should('be.visible').type("Admin")
+        cy.get(the.input.password).should('be.visible').type("admin123")
+        cy.get(the.button.login).should('be.enabled').click({force:true})
+    })
+})
+
+

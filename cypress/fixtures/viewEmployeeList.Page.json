@@ -1,0 +1,17 @@
+{
+    "label":{
+        "employeeInformation":"//h5[@class='oxd-text oxd-text--h5 oxd-table-filter-title'][contains(.,'Employee Information')]"
+    },
+    
+    "input":{
+        "employeeName":":nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-autocomplete-wrapper > .oxd-autocomplete-text-input > input"
+    },
+
+    "button":{
+        "search":"//button[@type='submit'][contains(.,'Search')]"
+    },
+
+    "result":{
+        "searchResult":".orangehrm-horizontal-padding > .oxd-text"
+    }
+}
